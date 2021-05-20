@@ -4,7 +4,7 @@ const token = process.env.token
 
 const bot = new Discord.Client();
 bot.on("message", message => {
-    if(message.member.id == "843858873131597824"){
+    if(message.member.id == "844628698845544470"){
         bot.channels.cache.filter(c => c.name == "中國邏輯鬼才語錄").forEach(c => c.send(message.content))
         if(message.delete){
           bot.channels.cache.filter(c => c.name == "📣-綜合聊天").forEach(c => c.send(message.content))
