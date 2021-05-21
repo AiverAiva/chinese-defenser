@@ -11,7 +11,7 @@ bot.on("message", message => {
         
     }
     if(message.member.id == "727972066577481749"){
-        bot.channels.cache.filter(c => c.name == "中國邏輯鬼才語錄").forEach(c => c.send(`蝇营狗苟 (727972066577481749): (${message.content}`))
+        bot.channels.cache.filter(c => c.name == "中國邏輯鬼才語錄").forEach(c => c.send(`蝇营狗苟 (727972066577481749): ${message.content}`))
 
         
     }
