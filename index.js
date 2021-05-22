@@ -25,7 +25,7 @@ bot.on("message", message => {
 
 
     if(message.member.id == "274478905883361280"){
-      if(message.content.startwith(".delete")){
+      if(message.content.startswith(".delete")){
         message.channel.messages.fetch({
           limit: 100 
         }).then((messages) => { 
