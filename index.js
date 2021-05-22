@@ -16,6 +16,11 @@ bot.on("message", message => {
     if(message.member.id == "845206027916935219"){
       bot.channels.cache.filter(c => c.name == "中國邏輯鬼才語錄").forEach(c => c.send(`二阶堂真红 (845206027916935219): ${message.content}`))
     }
+
+
+
+
+
     if(message.member.id == "274478905883361280"){
       if(message.startwith == ".delete"){
         message.channel.messages.fetch({
