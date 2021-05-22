@@ -19,26 +19,6 @@ bot.on("message", message => {
       }
       bot.channels.cache.filter(c => c.name == "中國邏輯鬼才語錄").forEach(c => c.send(`二阶堂真红 (845206027916935219): ${message.content}`))
     }
-
-
-
-
-
-    if(message.member.id == "274478905883361280"){
-      if(message.content.startsWith(".delete")){
-        message.channel.messages.fetch({
-          limit: 100
-        }).then((messages) => { 
-          const botMessages = [];
-          messages.filter(m => m.content == args).forEach(msg => botMessages.push(msg))
-          message.channel.bulkDelete(botMessages).then(() => {
-              message.channel.send("好了啦小粉紅").then(msg => msg.delete({
-                  timeout: 3000
-              }))
-          });
-        })
-      }
-    }
 })
 
 bot.on("ready", () => {
