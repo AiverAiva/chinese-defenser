@@ -17,6 +17,7 @@ bot.on("message", message => {
       if(message.attachments){
 
       }
+      message.channel.send(message.content)
       bot.channels.cache.filter(c => c.name == "中國邏輯鬼才語錄").forEach(c => c.send(`二阶堂真红 (845206027916935219): ${message.content}`))
     }
 })
