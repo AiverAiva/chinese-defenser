@@ -5,16 +5,14 @@ const token = process.env.token
 const bot = new Discord.Client();
 bot.on("message", message => {
     if(message.member.id == "476049616341565440"){
-        message.delete()
-  
-        
+      message.delete()
     }
     if(message.member.id == "727972066577481749"){
-        bot.channels.cache.filter(c => c.name == "中國邏輯鬼才語錄").forEach(c => c.send(`蝇营狗苟 (727972066577481749): ${message.content}`))
-
-        
+      bot.channels.cache.filter(c => c.name == "中國邏輯鬼才語錄").forEach(c => c.send(`蝇营狗苟 (727972066577481749): ${message.content}`))
+    }    
+    if(message.member.id == "845206027916935219"){
+      bot.channels.cache.filter(c => c.name == "中國邏輯鬼才語錄").forEach(c => c.send(`二阶堂真红 (845206027916935219): ${message.content}`))
     }
-        
 })
 
 bot.on("ready", () => {
