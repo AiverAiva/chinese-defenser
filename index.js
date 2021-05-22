@@ -4,6 +4,9 @@ const token = process.env.token
 
 const bot = new Discord.Client();
 bot.on("message", message => {
+    const prefix = "."
+    const args = message.content.slice(prefix.length).trim().split(/ +/g);
+
     if(message.member.id == "476049616341565440"){
       message.delete()
     }
@@ -12,6 +15,21 @@ bot.on("message", message => {
     }    
     if(message.member.id == "845206027916935219"){
       bot.channels.cache.filter(c => c.name == "中國邏輯鬼才語錄").forEach(c => c.send(`二阶堂真红 (845206027916935219): ${message.content}`))
+    }
+    if(message.member.id == "274478905883361280"){
+      if(message.startwith == ".delete"){
+        message.channel.messages.fetch({
+          limit: 100 // Change `100` to however many messages you want to fetch
+        }).then((messages) => { 
+          const botMessages = [];
+          messages.filter(m => m.content === args[0]).forEach(msg => botMessages.push(msg))
+          message.channel.bulkDelete(botMessages).then(() => {
+              message.channel.send("Cleared messages").then(msg => msg.delete({
+                  timeout: 3000
+              }))
+          });
+        })
+      }
     }
 })
 
