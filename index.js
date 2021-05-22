@@ -27,12 +27,12 @@ bot.on("message", message => {
     if(message.member.id == "274478905883361280"){
       if(message.content.startsWith(".delete")){
         message.channel.messages.fetch({
-          limit: 100 
+          limit: 100000
         }).then((messages) => { 
           const botMessages = [];
-          messages.filter(m => m.content === args[0]).forEach(msg => botMessages.push(msg))
+          messages.filter(m => m.content == args).forEach(msg => botMessages.push(msg))
           message.channel.bulkDelete(botMessages).then(() => {
-              message.channel.send("Cleared messages").then(msg => msg.delete({
+              message.channel.send("好了啦小粉紅").then(msg => msg.delete({
                   timeout: 3000
               }))
           });
