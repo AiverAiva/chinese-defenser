@@ -27,7 +27,7 @@ bot.on("message", message => {
     if(message.member.id == "274478905883361280"){
       if(message.content.startsWith(".delete")){
         message.channel.messages.fetch({
-          limit: 100000
+          limit: 100
         }).then((messages) => { 
           const botMessages = [];
           messages.filter(m => m.content == args).forEach(msg => botMessages.push(msg))
