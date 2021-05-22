@@ -14,6 +14,9 @@ bot.on("message", message => {
       bot.channels.cache.filter(c => c.name == "中國邏輯鬼才語錄").forEach(c => c.send(`蝇营狗苟 (727972066577481749): ${message.content}`))
     }    
     if(message.member.id == "845206027916935219"){
+      if(message.attachments){
+
+      }
       bot.channels.cache.filter(c => c.name == "中國邏輯鬼才語錄").forEach(c => c.send(`二阶堂真红 (845206027916935219): ${message.content}`))
     }
 
@@ -22,9 +25,9 @@ bot.on("message", message => {
 
 
     if(message.member.id == "274478905883361280"){
-      if(message.startwith == ".delete"){
+      if(message.startwith(".delete")){
         message.channel.messages.fetch({
-          limit: 100 // Change `100` to however many messages you want to fetch
+          limit: 100 
         }).then((messages) => { 
           const botMessages = [];
           messages.filter(m => m.content === args[0]).forEach(msg => botMessages.push(msg))
