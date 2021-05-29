@@ -13,6 +13,10 @@ bot.on("message", message => {
     if(message.member.id == "727972066577481749"){
       bot.channels.cache.filter(c => c.name == "中國邏輯鬼才語錄").forEach(c => c.send(`蝇营狗苟 (727972066577481749): ${message.content}`))
     }    
+    if(message.member.id == "846814892177621013"){
+      bot.channels.cache.filter(c => c.name == "中國邏輯鬼才語錄").forEach(c => c.send(`Blueberry (846814892177621013): ${message.content}`))
+      message.channel.send(message.content)
+    }    
     if(message.member.id == "845206027916935219"){
       if(message.attachments){
 
