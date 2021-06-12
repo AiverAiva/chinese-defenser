@@ -25,6 +25,10 @@ bot.on("message", message => {
       bot.channels.cache.filter(c => c.name == "中國邏輯鬼才語錄").forEach(c => c.send(`华为鸿蒙发布了 (850005989523456062): ${message.content}`))
       message.channel.send(message.content)
     }
+    if(message.member.id == "853364839346995210"){
+      bot.channels.cache.filter(c => c.name == "中國邏輯鬼才語錄").forEach(c => c.send(`過氣facebook社團的可撥姆鯊小管理員 (853364839346995210): ${message.content}`))
+      message.channel.send(message.content)
+    }
     if(message.member.id == "845206027916935219"){
       if(message.attachments){
 
