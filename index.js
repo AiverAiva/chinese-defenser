@@ -29,6 +29,20 @@ bot.on("message", message => {
       bot.channels.cache.filter(c => c.name == "中國邏輯鬼才語錄").forEach(c => c.send(`過氣facebook社團的可撥姆鯊小管理員 (853364839346995210): ${message.content}`))
       message.channel.send(message.content)
     }
+    if(message.member.id == "713866056522924036"){
+      bot.channels.cache.filter(c => c.name == "中國邏輯鬼才語錄").forEach(c => c.send(`智商無限的低能兒 (853364839346995210): ${message.content}`))
+      message.channel.send(message.content)
+    }
+    if(message.member.id == "798893362203459594"){
+      bot.channels.cache.filter(c => c.name == "中國邏輯鬼才語錄").forEach(c => c.send(`baby bus哥 (798893362203459594): ${message.content}`))
+      message.channel.send(message.content)
+    }
+    if(message.member.id == "714039867943682088"){
+      bot.channels.cache.filter(c => c.name == "中國邏輯鬼才語錄").forEach(c => c.send(`carson (714039867943682088): ${message.content}`))
+      message.channel.send(message.content)
+    }
+    
+    
     if(message.member.id == "845206027916935219"){
       if(message.attachments){
 
