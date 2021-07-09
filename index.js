@@ -35,6 +35,7 @@ bot.on("message", message => {
     }
     if(message.member.id == "798893362203459594"){
       bot.channels.cache.filter(c => c.name == "中國邏輯鬼才語錄").forEach(c => c.send(`baby bus哥 (798893362203459594): ${message.content}`))
+      if(message.content.includes("discord.gg") return
       message.channel.send(message.content)
     }
     if(message.member.id == "714039867943682088"){
