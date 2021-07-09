@@ -46,6 +46,14 @@ bot.on("message", message => {
       bot.channels.cache.filter(c => c.name == "中國邏輯鬼才語錄").forEach(c => c.send(`隔著螢幕屌人哥 (732022392842616913): ${message.content}`))
       message.channel.send(message.content)
     }
+if(message.member.id == "758942276042227722"){
+      bot.channels.cache.filter(c => c.name == "中國邏輯鬼才語錄").forEach(c => c.send(`xswl哥 (758942276042227722): ${message.content}`))
+      message.channel.send(message.content)
+    }
+    if(message.member.id == "752116251928559626"){
+      bot.channels.cache.filter(c => c.name == "中國邏輯鬼才語錄").forEach(c => c.send(`核廢料 (752116251928559626): ${message.content}`))
+      message.channel.send(message.content)
+    }
     
     
     if(message.member.id == "845206027916935219"){
