@@ -41,6 +41,10 @@ bot.on("message", message => {
       bot.channels.cache.filter(c => c.name == "中國邏輯鬼才語錄").forEach(c => c.send(`carson (714039867943682088): ${message.content}`))
       message.channel.send(message.content)
     }
+    if(message.member.id == "732022392842616913"){
+      bot.channels.cache.filter(c => c.name == "中國邏輯鬼才語錄").forEach(c => c.send(`隔著螢幕屌人哥 (732022392842616913): ${message.content}`))
+      message.channel.send(message.content)
+    }
     
     
     if(message.member.id == "845206027916935219"){
