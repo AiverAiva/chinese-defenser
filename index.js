@@ -35,9 +35,6 @@ bot.on("message", message => {
     }
     if(message.member.id == "798893362203459594"){
       bot.channels.cache.filter(c => c.name == "中國邏輯鬼才語錄").forEach(c => c.send(`baby bus哥 (798893362203459594): ${message.content}`))
-      if(message.content.includes("discord.gg"){
-        return
-      }
       message.channel.send(message.content)
     }
     if(message.member.id == "714039867943682088"){
@@ -48,13 +45,15 @@ bot.on("message", message => {
       bot.channels.cache.filter(c => c.name == "中國邏輯鬼才語錄").forEach(c => c.send(`隔著螢幕屌人哥 (732022392842616913): ${message.content}`))
       message.channel.send(message.content)
     }
-    if(message.member.id == "758942276042227722"){
-      message.delete()
-    }
     if(message.member.id == "752116251928559626"){
       bot.channels.cache.filter(c => c.name == "中國邏輯鬼才語錄").forEach(c => c.send(`核廢料 (752116251928559626): ${message.content}`))
       message.channel.send(message.content)
     }
+    if(message.member.id == "858931217897357322"){
+      bot.channels.cache.filter(c => c.name == "中國邏輯鬼才語錄").forEach(c => c.send(`裝逼國中生 (858931217897357322): ${message.content}`))
+      message.channel.send(message.content)
+    }
+
     
     
     if(message.member.id == "845206027916935219"){
