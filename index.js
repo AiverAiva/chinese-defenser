@@ -57,6 +57,10 @@ bot.on("message", message => {
       bot.channels.cache.filter(c => c.name == "中國邏輯鬼才語錄").forEach(c => c.send(`中国自愿解放革命军 (770866691205759006): ${message.content}`))
       message.channel.send(message.content)
     }
+    if(message.member.id == "758942276042227722"){
+      bot.channels.cache.filter(c => c.name == "中國邏輯鬼才語錄").forEach(c => c.send(`XY三小亦的 (758942276042227722): ${message.content}`))
+      message.channel.send(message.content)
+    }
 
     
     
