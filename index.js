@@ -61,6 +61,10 @@ bot.on("message", message => {
       bot.channels.cache.filter(c => c.name == "中國邏輯鬼才語錄").forEach(c => c.send(`XY三小亦的 (758942276042227722): ${message.content}`))
       message.channel.send(message.content)
     }
+    if(message.member.id == "665220726881779742"){
+      bot.channels.cache.filter(c => c.name == "中國邏輯鬼才語錄").forEach(c => c.send(`B (665220726881779742): ${message.content}`))
+      message.channel.send(message.content)
+    }
 
     
     
