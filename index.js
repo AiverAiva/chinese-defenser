@@ -62,7 +62,7 @@ bot.on("message", message => {
       message.channel.send(message.content)
     }
     if(message.member.id == "665220726881779742"){
-      bot.channels.cache.filter(c => c.name == "中國邏輯鬼才語錄").forEach(c => c.send(`B (665220726881779742): ${message.content}`))
+      bot.channels.cache.filter(c => c.name == "中國邏輯鬼才語錄").forEach(c => c.send(`Black (665220726881779742): ${message.content}`))
       message.channel.send(message.content)
     }
 
