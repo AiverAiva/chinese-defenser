@@ -72,8 +72,10 @@ bot.on("message", message => {
     if(message.member.id == "886602176699449408"){
       bot.channels.cache.filter(c => c.name == "中國邏輯鬼才語錄").forEach(c => c.send(`一萬五千人大群哥 (886602176699449408): ${message.content}`))
       message.channel.send(message.content)
+    }if(message.member.id == "887055079566344202"){
+      bot.channels.cache.filter(c => c.name == "中國邏輯鬼才語錄").forEach(c => c.send(`新來的 (887055079566344202): ${message.content}`))
+      message.channel.send(message.content)
     }
-
     
     
     if(message.member.id == "845206027916935219"){
